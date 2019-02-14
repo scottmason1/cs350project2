@@ -95,7 +95,7 @@ int main(int argc, char** argv){
             sprintf(levels2, "%d", levels);
               //printf("Levels: %d\n Prog2Tree", levels);
 
-              execlp("./prog2tree", "./prog2tree", "-N", levels2, "-M", children);
+	    execlp("./prog2tree", "./prog2tree", "-N", levels2, "-M", children, NULL);
 
             }
           }
@@ -156,7 +156,7 @@ int main(int argc, char** argv){
                   sprintf(levels2, "%d", levels);
                     //printf("Levels: %d\n Prog2Tree", levels);
 
-                    execlp("./prog2tree", "./prog2tree", "-N", levels2, "-M", children, "-p");
+		  execlp("./prog2tree", "./prog2tree", "-N", levels2, "-M", children, "-p", NULL);
 
 
                   }
@@ -213,7 +213,7 @@ int main(int argc, char** argv){
                   sprintf(levels2, "%d", levels);
                     //printf("Levels: %d\n Prog2Tree", levels);
 
-                    execlp("./prog2tree", "./prog2tree", "-N", levels2, "-M", children, "-s", sleepyTime);
+		  execlp("./prog2tree", "./prog2tree", "-N", levels2, "-M", children, "-s", sleepyTime, NULL);
 
 
                   }
